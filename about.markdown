@@ -1,18 +1,16 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: 关于
+malink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+本人是谁，难以定义。
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+这是一个个人博客，创建的主要目的是记录本人接触到的东西便于将来自我回顾，其次是为他人提供一个了解本人的途径。
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+由于写作水平和知识有限，为了避免花费太多精力在解释上，也为了避免文章重点不突出，我默认不去解释一搜索就能大概了解的概念。
+得先保证持续写作，再去做优化阅读体验的工作。
 
+初步计划将博客分为两个部分，一个部分是相对正式的文章，另一部分是完全不讲求版面的碎碎念。博客首页只展示正式文章，碎碎念放在不起眼的页面里。
 
-[jekyll-organization]: https://github.com/jekyll
+就这样。
