@@ -1,11 +1,10 @@
----
-layout: post
-title: Markdown渲染测试
-date: 2024-05-15 12:23:38 +0800
-tags: 不值一读
----
++++
+title = 'Markdown渲染测试'
+date = 2024-05-16 12:00:00
+tag = '标签1'
++++
 
-这篇文章只是在测试markdown渲染样式。
+用文章直观测试markdown渲染样式。 <!--more-->
 
 ## 标题级别
 
@@ -16,8 +15,6 @@ tags: 不值一读
 ##### 五级标题
 
 正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
-
-正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
 
 ## 列表
 
@@ -47,7 +44,7 @@ tags: 不值一读
 
 ## 块
 
-### 代码
+### 代码块
 
 ```python
 from sqlalchemy import * 
@@ -56,7 +53,7 @@ class Movie(Base) :
     title = Column(String(255), nullable=False) 
 ```
 
-### 公式
+### 公式块
 
 $$
 \begin{aligned}
@@ -83,11 +80,23 @@ $$
 ### Mermaid
 
 ```mermaid
+%%{init: {'theme':'dark'}}%%
 graph LR
     A[Square Rect] -- Link text --> B((Circle))
     A --> C(Round Rect)
     B --> D{Rhombus}
     C --> D
+```
+
+### ASCII
+```goat
+      .               .--- 1  
+      |           .---+        
+  .---+---.       |   '--- 2   
+  |       |    ---+           
+.-+-.   .-+-.     |   .--- 3   
+|   |   |   |     '---+        
+1   2   3   4         '--- 4   
 ```
 
 ## 其他
@@ -112,20 +121,14 @@ graph LR
 
 ## 格式
 
-正文**加粗**正文
+正文*斜体*正文**加粗**正文***加粗斜体***正文
 
-正文*斜体*正文
+正文<u>下划线</u>正文~~删除线~~正文
 
-正文***加粗斜体***正文
-
-正文<u>下划线</u>正文
-
-正文~~删除线~~正文
-
-内联公式$\theta_P(x)=f(x)+\max\limits_{\alpha,\beta;\beta_j\ge0}\left[\sum\limits_{i=1}^m\alpha_ih_i(x)+\sum\limits_{j=1}^n\beta_jg_j(x)\right]$
+内联公式$\max\limits_{\alpha}$
 
 [超链接](https://unsplash.com/ "测试title文字")
 
-带透明通道的[图片](http://pngimg.com/uploads/hat/hat_PNG5709.png)
-
-<img src="https://cdn.pixabay.com/photo/2016/03/26/01/17/treble-clef-1279909_1280.png" width=100>
+带透明通道的图片
+![图片](http://pngimg.com/uploads/hat/hat_PNG5709.png)
+![treble](https://cdn.pixabay.com/photo/2016/03/26/01/17/treble-clef-1279909_1280.png)
