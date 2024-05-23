@@ -77,14 +77,17 @@ enableEmoji = true
     [menu.main.params]
       icon = "fa-solid fa-tags"
   [[menu.main]]
+    identifier = "microblog"
+    name = "碎碎念"
+    url = "/microblog/"
+    weight = 4
+    [menu.main.params]
+      icon = "fa-solid fa-comment"
+  [[menu.main]]
     identifier = "about"
-    parent = ""
-    pre = ""
-    post = ""
     name = "关于"
     url = "/about/"
-    title = ""
-    weight = 4
+    weight = 5
     [menu.main.params]
       icon = "fa-solid fa-id-card"
 
