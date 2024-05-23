@@ -1,7 +1,7 @@
 timeZone = 'Etc/GMT-8'
 
 # website title
-title = '何陋之有'
+title = '一个博客'
 # Hostname (and path) to the root
 baseURL = "http://localhost:1313"
 # theme list
@@ -39,7 +39,7 @@ enableEmoji = true
     pre = ""
     # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
     post = ""
-    name = "Archives"
+    name = "归档"
     url = "/archives/"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
     title = ""
@@ -70,12 +70,23 @@ enableEmoji = true
     parent = ""
     pre = ""
     post = ""
-    name = "Tags"
+    name = "标签"
     url = "/tags/"
     title = ""
     weight = 3
     [menu.main.params]
       icon = "fa-solid fa-tags"
+  [[menu.main]]
+    identifier = "about"
+    parent = ""
+    pre = ""
+    post = ""
+    name = "关于"
+    url = "/about/"
+    title = ""
+    weight = 4
+    [menu.main.params]
+      icon = "fa-solid fa-id-card"
 
 # -------------------------------------------------------------------------------------
 # Related content Configuration
@@ -315,7 +326,7 @@ enableEmoji = true
 
   # Author Configuration
   [params.author]
-    name = "我"
+    name = "博主"
     email = ""
     link = ""
     avatar = ""
