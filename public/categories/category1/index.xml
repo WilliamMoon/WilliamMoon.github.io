@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Category1 on 我的博客</title>
+    <link>http://localhost:1313/categories/category1/</link>
+    <description>Recent content in Category1 on 我的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Sun, 09 Nov 2025 17:20:33 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/category1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>渲染测试</title>
+      <link>http://localhost:1313/posts/%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Sun, 09 Nov 2025 17:20:33 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/</guid>
+      <description>&lt;p&gt;用文章直观测试常用语法渲染样式。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
