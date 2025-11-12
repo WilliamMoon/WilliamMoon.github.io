@@ -6,8 +6,15 @@
     <description>Recent content on 我的博客</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 09 Nov 2025 17:20:33 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Nov 2025 12:32:04 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>快速建站</title>
+      <link>http://localhost:1313/posts/%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%99/</link>
+      <pubDate>Wed, 12 Nov 2025 12:32:04 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%99/</guid>
+      <description>&lt;p&gt;这篇文章介绍了我如何搭建一个静态博客网站。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>渲染测试</title>
       <link>http://localhost:1313/posts/%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/</link>

@@ -78,3 +78,6 @@ reorderShares = ['']
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[markup.goldmark.renderer]
+  unsafe = true
