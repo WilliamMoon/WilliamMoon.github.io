@@ -15,11 +15,11 @@
 
 
 <meta name="author" content="" />
-<meta name="description" content="这篇文章以本人的视角介绍如何快速搭建一个静态博客网站。
+<meta name="description" content="这篇文章介绍了我如何搭建一个静态博客网站。
 " />
 
 
-<meta name="keywords" content="建站教程,静态网站">
+<meta name="keywords" content="静态网站">
 
 
 
@@ -29,13 +29,12 @@
 <meta property="og:url" content="http://localhost:1313/posts/%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%99/">
   <meta property="og:site_name" content="我的博客">
   <meta property="og:title" content="快速建站">
-  <meta property="og:description" content="这篇文章以本人的视角介绍如何快速搭建一个静态博客网站。">
+  <meta property="og:description" content="这篇文章介绍了我如何搭建一个静态博客网站。">
   <meta property="og:locale" content="zh_Hans">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-11-12T12:32:04+08:00">
     <meta property="article:modified_time" content="2025-11-12T12:32:04+08:00">
-    <meta property="article:tag" content="建站教程">
     <meta property="article:tag" content="静态网站">
 
 
@@ -43,7 +42,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="快速建站">
-  <meta name="twitter:description" content="这篇文章以本人的视角介绍如何快速搭建一个静态博客网站。">
+  <meta name="twitter:description" content="这篇文章介绍了我如何搭建一个静态博客网站。">
 
 
 
@@ -258,11 +257,11 @@
     <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
       
   <meta itemprop="name" content="快速建站">
-  <meta itemprop="description" content="这篇文章以本人的视角介绍如何快速搭建一个静态博客网站。">
+  <meta itemprop="description" content="这篇文章介绍了我如何搭建一个静态博客网站。">
   <meta itemprop="datePublished" content="2025-11-12T12:32:04+08:00">
   <meta itemprop="dateModified" content="2025-11-12T12:32:04+08:00">
-  <meta itemprop="wordCount" content="3039">
-  <meta itemprop="keywords" content="建站教程,静态网站">
+  <meta itemprop="wordCount" content="3056">
+  <meta itemprop="keywords" content="静态网站">
 
       <header>
         <h1 itemprop="headline">快速建站</h1>
@@ -313,8 +312,8 @@
       <section id="dream-single-post-content" itemprop="articleBody">
         
 
-        <p>这篇文章以本人的视角介绍如何快速搭建一个静态博客网站。</p>
-<p>不过仅有展示文章的基本功能，更多功能比如评论系统、搜索功能，等后续做了再考虑完善相关内容。随着基础设施的发展，对我这样只是发发文章的人来说，未来不见得有独立建站的必要性，现在就是折腾着玩。</p>
+        <p>这篇文章介绍了我如何搭建一个静态博客网站。</p>
+<p>不过站点仅有展示文章的基本功能，更多功能比如评论系统、搜索功能，等后续做了再考虑完善相关内容。随着基础设施的发展，对我这样只是发发文章的人来说，未来不见得有独立建站的必要性，现在就是折腾着玩。</p>
 <h2 id="为什么自建站">为什么自建站</h2>
 <p>“<strong>不怎么麻烦就能获得的自由</strong>”这点就足够让我向自建博客的方向前进，前人撰写的完善的部署文档让我的前进没有阻碍。</p>
 <p>从另一个角度来说，我简单看了下CSDN、cnblogs、ITeye、51CTO、掘金这几个平台，为什么不选择博客平台大概是这么三点原因：</p>
@@ -333,12 +332,12 @@
 </ol>
 <p>综上AI所述，静态网站是我这样的懒狗建站的第一选择。</p>
 <h2 id="选择静态网站生成器">选择静态网站生成器</h2>
-<p>首先需要选择一个静态网站生成器，常见的有Hugo、Jekyll、Hexo等。三者我都尝试了下，Jekyll采用Ruby编写，是GitHub Pages官方支持的生成器，自带workflow，相当适合初学者使用，缺点是要装Ruby而且网站构建速度较慢。Hexo基于Node.js，适合有前端基础、喜欢定制化的用户，生成速度较快，缺点也是要装环境。Hugo采用编译型的Go语言编写，生成速度极快，能做到修改后毫秒级重生成，适合内容较多的网站。</p>
-<p>我先选择了Hugo，因为它没有环境依赖，我电脑上少装一个是一个，而且Node.js和Ruby环境都有点臃肿。不过总结网友评论，最后要完全满足自己需求都要搞最重型的WordPress，二十多年的插件生态、60.5%的CMS市场占有率（根据<a href="https://w3techs.com/technologies/details/cm-wordpress" target="_blank">W3Techs</a>
-最新数据）确实不是吹的。</p>
+<p>首先需要选择一个静态网站生成器，常见的有Hugo、Jekyll、Hexo等。三者我都尝试了下，Jekyll采用Ruby编写，是GitHub Pages官方支持的生成器，自带workflow，相当适合初学者使用，缺点是要装Ruby而且网站构建速度较慢。Hexo基于Node.js，适合有前端基础、喜欢定制化的用户，生成速度较快，缺点也是要装环境。Hugo采用编译型的Go语言编写，生成速度极快，能做到修改后毫秒级重生成，适合我这种会在本地各种折腾的人。</p>
+<p>考虑到没有环境依赖，我直接选择了Hugo，电脑上少装一个环境是一个，而且Node.js和Ruby环境在Windows上都有点臃肿而难以管理。不过总结网友评论，最后要完全满足自己需求都要搞最重型的WordPress，二十多年的插件生态、60.5%的CMS市场占有率（我现查的<a href="https://w3techs.com/technologies/details/cm-wordpress" target="_blank">W3Techs</a>
+今天最新数据）确实不是吹的。</p>
 <h2 id="安装hugo">安装Hugo</h2>
 <p>版本上我直接安装Hugo Extended，因为相比Standard版基本没有额外成本。有这个优点，具体的好处比如支持Sass从而支持更多主题、支持WebP图像处理都不用细看了。</p>
-<p>我同时在使用多台电脑，Windows 10/11和macOS系统都有，并且每个系统都安装了包管理器，在每个系统下安装Hugo都非常简单，一个命令搞定。其他系统和其他安装方式参见<a href="https://gohugo.io/installation/" target="_blank">Hugo官方文档</a>
+<p>我同时在使用多台电脑，Windows 10/11和macOS系统都有，并且每个系统都安装了包管理器，在每个系统下安装Hugo都非常简单，一个命令搞定。其他系统和其他安装方式参见<a href="https://gohugo.io/installation/" target="_blank">官方文档</a>
 。</p>
 <p>Windows 11直接使用自带的WinGet包管理器：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>winget install Hugo.Hugo.Extended
@@ -366,8 +365,8 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>brew install hugo
 </span></span></code></pre></div><p>新开一个shell，执行如下命令确认安装成功。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>hugo version
-</span></span></code></pre></div><h2 id="站点初始化">站点初始化</h2>
-<p>在站点目录（本文以<code>hugo-blog</code>为例）上级目录执行以下命令初始化站点，添加主题</p>
+</span></span></code></pre></div><h2 id="初始化站点">初始化站点</h2>
+<p>在站点目录（本文以<code>hugo-blog</code>为例）上级目录执行以下命令初始化站点并添加主题</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>hugo new site hugo-blog
 </span></span><span style="display:flex;"><span>cd hugo-blog
 </span></span><span style="display:flex;"><span>git init
@@ -384,11 +383,11 @@
 
   </blockquote>
 
-<h2 id="文章撰写">文章撰写</h2>
+<h2 id="撰写新文章">撰写新文章</h2>
 <p>标准流程是在博客根目录下执行</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>hugo new posts/xxx.md
 </span></span></code></pre></div><p>创建新文章，编辑博客文件夹下的<code>content/posts/xxx.md</code>文件来撰写文章。</p>
-<p>文章开头的元信息（Frontmatter，我也不知道怎么翻译）部分里可能出现各种乱七八糟的属性，最重要的就是<code>title</code>、<code>date</code>和<code>draft</code>，其他属性不认识都可以删，如果想认识一下可以在主题文档里搜<code>frontmatter</code>。</p>
+<p>文章开头的元信息（frontmatter，查了下没看到统一的翻译方法）部分里可能出现各种乱七八糟的属性，最重要的就是<code>title</code>、<code>date</code>和<code>draft</code>，其他属性不认识都可以删，如果想认识一下可以在主题文档里搜<code>frontmatter</code>。</p>
 <p>写完想发布时，官方是说把<code>draft</code>属性改为<code>false</code>（当然<a href="https://gohugo.io/getting-started/usage/#draft-future-and-expired-content" target="_blank">文档</a>
 里还有<code>date</code>到了、<code>expiryDate</code>没到的要求，不过正常不会出现），但我直接删了这个属性也可以，大概率不会出问题，出问题再说，反正这个网站我还要大改。</p>
 <h2 id="本地预览">本地预览</h2>
@@ -412,18 +411,18 @@
 <h2 id="更多站点配置">更多站点配置</h2>
 <p>站点配置非常丰富且因客观主题和主观需求而异，详见<a href="https://gohugo.io/configuration/" target="_blank">官方文档</a>
 。由于已经写累了，这里就写一个Raw HTML警告的处理配置。</p>
-<p>如果文章中有HTML代码，比如用<code>&lt;br&gt;</code>在表格里换行、<code>&lt;img width=&quot;50&quot;&gt;</code>来插入调整尺寸的图片、<code>&lt;p align=&quot;right&quot;&gt;</code>来给引言作者右对齐，在生成网站时会报警告信息，看到不舒服。考虑到自己写的文章里只会使用非常简单、基本安全的HTML标记，可以在站点配置文件中添加以下内容来允许渲染器（Hugo默认用的Goldmark）渲染文章里的HTML代码：</p>
+<p>如果文章中有HTML代码，比如用<code>&lt;br&gt;</code>在表格里换行、<code>&lt;img width=&quot;50&quot;&gt;</code>来插入调整尺寸的图片、<code>&lt;p align=&quot;right&quot;&gt;</code>来给引言作者右对齐，在生成网站时会报警告信息，看到就感觉不舒服。考虑到自己写的文章里只会使用非常简单、基本安全的HTML标记，可以在站点配置文件中添加以下内容来允许渲染器（Hugo默认用的Goldmark）渲染文章里的HTML代码：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">renderer</span>]
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">unsafe</span> = <span style="color:#66d9ef">true</span>
-</span></span></code></pre></div><p>如果还是希望保留这个安全考虑，只是不想看见警告，可以只添加下面这一行来不显示相关警告：</p>
+</span></span></code></pre></div><p>如果还是希望保留这个安全考虑，只是不想在生成网站时看见警告，可以只添加下面这一行来不显示相关警告：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">ignoreLogs</span> = [<span style="color:#e6db74">&#39;warning-goldmark-raw-html&#39;</span>]
 </span></span></code></pre></div><p>当然最好还是不直接用HTML，相关问题的解决方案等以后遇到再探索吧，这次遇到是测试文章里在试HTML。</p>
 <h2 id="写作背后的思考">写作背后的思考</h2>
 <p>在撰写这篇文章时，我始终被一种割裂感困扰。</p>
 <p>一方面，我希望它逻辑自洽，能让一位毫无基础的朋友也能依样画葫芦地搭建起一个静态博客网站。
 但另一方面，我又觉得写这些步骤实在太过机械化，只是把官方文档的话再说一遍，遇到问题也不过是把通过非常简单的关键词就能在文档或者网络上搜索到的解决方案再罗列一遍，何况现在是能用大模型模糊提问的时代，简单问题的解决方案唾手可得。</p>
-<p>最终，我选择在不省略环节的同时，逐渐省略了每个环节里我觉得直接点开链接就能搞定的细节，由读者自己点开链接、参考我认为已经足够完善的文档去填补。我希望对这篇文章的读者而言，锻炼独立解决问题的能力远比机械地照着步骤搭建完网站更重要。</p>
-<p>如果你在跟随本文操作时遇到了障碍，恭喜你，这正是锻炼你真正能力的开始。欢迎将你的探索过程和结果与我分享，虽然我还没放联系方式。</p>
+<p>最终，我选择在不省略环节的同时，逐渐省略了每个环节里我觉得直接点开链接就能搞定的细节，由读者自己参考已经足够完善的文档去填补。我希望对这篇文章的读者而言，锻炼独立解决问题的能力远比机械地照着步骤搭建完网站更重要。</p>
+<p>不过，如果你在跟随本文操作遇到障碍，也非常欢迎将你尝试解决问题的探索过程和结果与我分享，我也会尽快完善联系方式。</p>
 
         
       </section>
