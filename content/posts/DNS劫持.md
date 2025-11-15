@@ -1,11 +1,8 @@
 ---
 title: DNS劫持
-date: 2025-11-12T17:57:50+08:00
-lastmod: 2025-11-12T17:57:50+08:00
-author: Author Name
-# avatar: /img/author.jpg
-# authorlink: https://author.site
-cover: /img/cover.jpg
+date: 2025-11-17T17:57:50+08:00
+lastmod: 2025-11-17T17:57:50+08:00
+# cover: /img/cover.jpg
 # covercaption: a description of the cover image
 # images:
 #   - /img/cover.jpg
