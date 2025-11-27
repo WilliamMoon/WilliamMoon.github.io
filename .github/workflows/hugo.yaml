@@ -90,9 +90,10 @@ jobs:
         run: >
           staticrypt ./public -r 
           --short -p ${{ secrets.STATICRYPT_PASSWORD }}
-          --template-title "诈骗网站" 
-          --template-instructions "欢迎填写银行卡密码" 
-          --template-placeholder "密码" 
+          --remember 42
+          --template-title "梦幻泡影"
+          --template-instructions "吾生也有涯，而知也无涯"
+          --template-placeholder "姨拔揪三" 
           --template-remember "记住42天" 
           --template-button "是"  
           --template-color-primary "#181818" 
