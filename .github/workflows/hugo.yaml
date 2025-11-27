@@ -89,7 +89,7 @@ jobs:
       - name: Encrypt posts HTML with StatiCrypt
         run: >
           staticrypt ./public -r 
-          --short -p "${{ secrets.STATICRYPT_PASSWORD }}" 
+          --short -p ${{ secrets.STATICRYPT_PASSWORD }}
           --template-title "诈骗网站" 
           --template-instructions "欢迎填写银行卡密码" 
           --template-placeholder "密码" 
@@ -102,7 +102,7 @@ jobs:
           --template-toggle-show "显示" 
       - name: Clean Up
         run: |
-          rm -rf ./public
+          rm -r ./public
           mv ./encrypted/public ./public
           rm -r ./encrypted
       - name: Cache save
