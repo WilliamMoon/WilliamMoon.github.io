@@ -84,6 +84,15 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
+      - name: Install StatiCrypt
+        run: npm install -g staticrypt
+      - name: Encrypt HTML files with StatiCrypt
+        run: |
+          find ./public -name "*.html" -exec staticrypt {} "${{ secrets.SITE_PASSWORD }}" -o {} -q --no-open \
+          \; 
+      - name: Remove unencrypted HTML files
+        run: |
+          find ./public -name "*.html" -exec grep -L 'staticrypt' {} \; | xargs rm -f
       - name: Cache save
         id: cache-save
         uses: actions/cache/save@v4
