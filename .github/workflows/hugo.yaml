@@ -88,7 +88,7 @@ jobs:
         run: npm install -g staticrypt
       - name: Encrypt Site
         run: |
-          staticrypt ./public -r --short -p "${{ secrets.STATICRYPT_PASSWORD }}" --template-button "是"  --template-color-primary "#181818" --template-color-secondary "#181818"  --template-error "(*´・д・)?" --template-placeholder "密码" --template-remember "记住42天" --template-title "诈骗网站" --template-instructions "欢迎填写银行卡密码" --template-toggle-hide "隐藏" --template-toggle-show "显示" --output-dir ./public_encrypted
+          staticrypt ./public -r --short -p "${{ secrets.STATICRYPT_PASSWORD }}" --template-button "是"  --template-color-primary "#181818" --template-color-secondary "#181818"  --template-error "(*´・д・)?" --template-placeholder "密码" --template-remember "记住42天" --template-title "诈骗网站" --template-instructions "欢迎填写银行卡密码" --template-toggle-hide "隐藏" --template-toggle-show "显示" -d ./public_encrypted
           rm -rf ./public
           mv ./public_encrypted ./public
       - name: Cache save
