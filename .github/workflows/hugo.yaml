@@ -86,13 +86,11 @@ jobs:
             --cacheDir "${{ runner.temp }}/hugo_cache"
       - name: Install StatiCrypt
         run: npm install -g staticrypt
-      - name: Encrypt HTML files with StatiCrypt
+      - name: Encrypt Site
         run: |
-          find ./public -name "*.html" -exec staticrypt {} "${{ secrets.SITE_PASSWORD }}" -o {} -q --no-open \
-          \; 
-      - name: Remove unencrypted HTML files
-        run: |
-          find ./public -name "*.html" -exec grep -L 'staticrypt' {} \; | xargs rm -f
+          staticrypt ./public -r --short -p "${{ secrets.STATICRYPT_PASSWORD }}" --template-button "是"  --template-color-primary "#181818" --template-color-secondary "#181818"  --template-error "(*´・д・)?" --template-placeholder "密码" --template-remember "记住42天" --template-title "诈骗网站" --template-instructions "欢迎填写银行卡密码" --template-toggle-hide "隐藏" --template-toggle-show "显示" --output-dir ./public_encrypted
+          rm -rf ./public
+          mv ./public_encrypted ./public
       - name: Cache save
         id: cache-save
         uses: actions/cache/save@v4
